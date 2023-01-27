@@ -18,10 +18,10 @@ const passwordDisplay = document.getElementById ("passwordDisplay")
 characterAmountNumber.addEventListener("input", syncAmount)
 characterAmountRange.addEventListener("input", syncAmount)
 
-const UPPERCASE_CHAR_CODES = asciiCode(65, 90) 
-const LOWERCASE_CHAR_CODES = asciiCode(97, 122)
-const NUMBER_CHAR_CODES = asciiCode(48, 57) 
-const SYMBOL_CHAR_CODES = asciiCode(33, 47).concat(asciiCode(58, 64)).concat(asciiCode(91, 96)).concat(asciiCode(123, 126))
+const upperCodes = asciiCode(65, 90) 
+const lowerCodes = asciiCode(97, 122)
+const numberCodes = asciiCode(48, 57) 
+const symbolCodes = asciiCode(33, 47).concat(asciiCode(58, 64)).concat(asciiCode(91, 96)).concat(asciiCode(123, 126))
 
 function asciiCode(low, high) {
   const array = []
@@ -49,14 +49,13 @@ form.addEventListener("submit", e => {
 })
 
 function generatePassword (characterAmount, includeUppercase, includeNumbers, includeSymbols) {
-  console.log(LOWERCASE_CHAR_CODES)
-  let charCodes = LOWERCASE_CHAR_CODES
-  if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
-  if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
-  if (includeSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
+  let allViableCodes = lowerCodes
+  if (includeUppercase) allViableCodes = allViableCodes.concat(upperCodes)
+  if (includeNumbers) allViableCodes = allViableCodes.concat(numberCodes)
+  if (includeSymbols) allViableCodes = allViableCodes.concat(symbolCodes)
   const passwordCharacters = []
   for (let i = 0; i < characterAmount; i++) {
-    const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
+    const characterCode = allViableCodes[Math.floor(Math.random() * allViableCodes.length)]
     passwordCharacters.push(String.fromCharCode(characterCode))
   }
   return passwordCharacters.join("")
