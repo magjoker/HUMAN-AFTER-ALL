@@ -1,6 +1,6 @@
 # HUMAN-AFTER-ALL
 
-##Password Generator
+# Password Generator
 
 <img width="1213" alt="Screen Shot 2023-01-26 at 9 36 37 PM" src="https://user-images.githubusercontent.com/118233640/215010426-f27a474e-dbd8-4d80-ba77-7d3948214b26.png">
 
