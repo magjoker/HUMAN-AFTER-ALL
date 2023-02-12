@@ -8,3 +8,5 @@ Create a Secure Password in 3 easy steps
 3) Copy your password
 
 https://magjoker.github.io/HUMAN-AFTER-ALL/
+
+P.S - In the JS file the function generatePassword mixes "var" and "let" to define variables. This is to avoid issues with hoisting. 
