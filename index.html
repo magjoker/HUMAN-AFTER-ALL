@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Every Hackers Nightmare</title>
-  <link rel="stylesheet" href="assets/style.css"/>
-  <script src="scripts/script.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Password Generator</h1>
-  </header>
-  <div class="card">
-    <div class="card-header">
-      <h2>Generate The Most Secure Password Ever™</h2>
-      <form id="passwordForm">
-        <label for="characterNumber">Number of Characters</label>
-        <div>
-          <input type="range" min="1" max="128" value="15" id="characterAmountRange">
-          <input type="number" min="1" max="128" value="15" id="characterAmountNumber">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Every Hackers Nightmare</title>
+    <link rel="stylesheet" href="/assets/style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
         </div>
-        <label for="includeUppercase">Include Uppercase</label>
-        <input type="checkbox" id="includeUppercase">
-        <label for="includeSymbols">Include Symbols</label>
-        <input type="checkbox" id="includeSymbols">
-        <label for="includeNumbers">Include Numbers</label>
-        <input type="checkbox" id="includeNumbers">
-      </div>
+        <div>
+          <p>Type your desired character amount from 1 to 128 in this box, and then press the button!</p>
+          <input type="text" id="passwordLength">
+        </div>
         <div class="card-body">
-          <textarea 
+          <textarea
             readonly
-            id="passwordDisplay"
+            id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
         </div>
         <div class="card-footer">
-          <button type="submit" id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn">Get Started!</button>
         </div>
-      </form>
+      </div>
     </div>
-  <div>
-  <footer> © 2023 MAG</footer>
-  </div>
-</body>
+    <footer>© 2023 MAG</footer>
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
 </html>
