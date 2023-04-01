@@ -1,5 +1,6 @@
 # Password Generator
-<img width="1033" alt="Screen Shot 2023-02-12 at 3 10 21 AM" src="https://user-images.githubusercontent.com/118233640/218304935-c4fd85d0-fc3e-4622-bbaa-6605a265a542.png">
+<img width="1104" alt="Screen Shot 2023-04-01 at 12 37 12 AM" src="https://user-images.githubusercontent.com/118233640/229270011-6ffb36bd-c7f3-4948-91b1-ae2973a9b070.png">
+
 
 Create a Secure Password in 3 easy steps
 
