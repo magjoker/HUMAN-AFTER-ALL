@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Every Hackers Nightmare</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="assets/style.css"/>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1>Ye Olde Password Generator</h1>
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2 class="text">Generate a Password</h2>
         </div>
-        <div>
-          <p>Type your desired character amount from 1 to 128 in this box, and then press the button!</p>
+        <div class="thing">
+          <p class="text">Type your desired character amount from 8 to 128 in this box.</p>
           <input type="text" id="passwordLength">
         </div>
         <div class="card-body">
@@ -29,11 +29,12 @@
           ></textarea>
         </div>
         <div class="card-footer">
+          <p class="text">Then click this button to get started!</p>
           <button id="generate" class="btn">Get Started!</button>
         </div>
       </div>
     </div>
-    <footer>© 2023 MAG</footer>
+    <footer class="text">Made with love © 2023 MAG</footer>
     <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>
